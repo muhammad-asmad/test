@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmad Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            background: url('gym.jpg')
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            text-align: center;
+        }
+
+        .left div {
+            line-height: 0px;
+            font-weight: bold;
+        }
+
+        .left img {
+            width: 50px;
+            filter: invert(100%);
+        }
+
+        .mid {
+            width: 35%;
+            /* border: 2px solid yellow; */
+            display: block;
+            margin: 20px auto;
+        }
+
+        .right {
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 0px 10px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+
+            color: rgb(219, 173, 21);
+            text-decoration: underline;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        .btn {
+            background-color: white;
+            color: black;
+            padding: 8px 15px;
+            font-size: 18px;
+            margin: 0px 5px;
+            border-radius: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: khaki;
+            cursor: pointer;
+        }
+
+        .form {
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: block;
+            width: 40%;
+            margin: 50px 50px;
+            padding: 30px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form input {
+            border-radius: 5px;
+            color: black;
+            background-color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+            margin: 3px auto;
+            width: 70%
+        }
+
+        .form button {
+            margin: 10px auto;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo.png" alt="dumbbell logo">
+            <div>Asmad Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Enroll Now</button>
+        </div>
+        <div class="container">
+            <h1>Join Our Faisalabad Gym Today</h1>
+            <div class="form-group">
+                <form action="nocation.php" class="form">
+
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    <input type="text" name="name" id="name" placeholder="Enter your Age">
+                    <input type="text" name="name" id="name" placeholder="Enter your Gender">
+                    <input type="text" name="name" id="name" placeholder="Enter your Locality">
+                    <button class="btn">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
